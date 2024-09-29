@@ -4,6 +4,9 @@
 #include <math.h>
 #include <iomanip>
 
+
+
+
 Temp::Temp()
 {
 }
@@ -23,7 +26,7 @@ void Temp::getTemp()
 		double TempStar = 0;
 		TempStar = std::round(abs(number / 3));
 
-
+		
 		//Checks to see the required amount of spaces and star to print
 		if (number >= 0 && number < 10) {
 			std::cout << std::setw(3) << number << std::setw(15) << "|";
@@ -72,7 +75,11 @@ void Temp::getTemp()
 			}
 			std::cout << std::endl;
 		}
+		
 	}
+	
+
+	
 	//close the file
 	inputFile.close();
 
