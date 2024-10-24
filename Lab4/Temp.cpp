@@ -24,6 +24,7 @@ void Temp::getTemp()
 	float number;
 	while (inputFile >> number) { // Read numbers until the end of the file
 		double TempStar = 0;
+		//calculates the number of stars to print
 		TempStar = std::round(abs(number / 3));
 
 		
